@@ -9,16 +9,24 @@ export const StatsDisplay: React.FC<StatsDisplayProps> = ({
     <div className="displayStats">
       <div>
         <p>Characters</p>
-        <p>{stats.characterCount}</p>
+        <p style={{ textAlign: "center", color: "black", fontWeight: "bold" }}>
+          {stats.characterCount}
+        </p>
       </div>
       <div>
         <p>Words</p>
-        <p>{stats.wordCount}</p>
+        <p style={{ textAlign: "center", color: "red", fontWeight: "bold" }}>
+          {stats.wordCount}
+        </p>
       </div>
       {showReadingTime && (
         <div>
           <p>Reading Time</p>
-          <p>{stats.readingTime} min</p>
+          <p
+            style={{ textAlign: "center", color: "black", fontWeight: "bold" }}
+          >
+            {stats.readingTime} min
+          </p>
         </div>
       )}
     </div>

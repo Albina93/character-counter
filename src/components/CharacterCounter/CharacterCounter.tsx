@@ -29,13 +29,14 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
   };
 
   return (
-    <div>
-      <h1>Character Counter App</h1>
+    <div className="counter">
+      <h1>Character Counter</h1>
       <TextInput onTextChange={handleTextChange} />
       <StatsDisplay stats={stats} />
 
-      <p>Minimum words: {minWords}</p>
-      <p>Maximum words: {maxWords}</p>
+      <span className="spanEl">
+        Min: {minWords} | Max: {maxWords}
+      </span>
     </div>
   );
 };

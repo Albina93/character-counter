@@ -1,0 +1,32 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textInput textarea {
+  width: 600px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 10px;
+}
+textarea:focus {
+  outline: none;
+}
+.displayStats {
+  color: grey;
+  width: 620px;
+  height: 140px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.spanEl {
+  margin-top: -40px;
+  color: grey;
+  font-size: 18px;
+}
